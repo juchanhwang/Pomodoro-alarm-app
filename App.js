@@ -1,13 +1,15 @@
-import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
 
-import Home from './pages/Home';
-import Information from './pages/Information';
-import Report from './pages/Report';
+import Navigator from './Navigator';
+import store from './redux/store'; //Import the store
 
-const TabNavigator = createBottomTabNavigator({
-  Report,
-  Home,
-  Information
-});
-
-export default createAppContainer(TabNavigator);
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <Navigator />
+      </Provider>
+    );
+  }
+}
