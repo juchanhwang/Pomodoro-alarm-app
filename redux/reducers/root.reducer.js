@@ -4,5 +4,5 @@ import alarm from './alarm.reducer';
 
 export default combineReducers({
   test,
-  alarm
+  alarm,
 });
