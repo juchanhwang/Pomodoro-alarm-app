@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { Text, View } from "react-native";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Text, View } from 'react-native';
 
 const Container = styled.View`
   width: 312;
@@ -15,7 +15,6 @@ const CardContainer = styled.View`
   width: 224;
   justifyContent: center;
 `;
-
 
 const CardCategory = styled.Text`
   height: 14;
@@ -49,15 +48,14 @@ const CurrentPage = styled.Text`
   letterSpacing: -0.38;
   textAlign: right;
   color: #ffffff;
-
 `;
 
 export default class ContentCard extends Component {
   static defaultProps = {
-    category: "Category name",
-    pomoName: "This is pomo name",
+    category: 'Category name',
+    pomoName: 'This is pomo name',
     totalPage: 8,
-    CurPage: 8
+    CurPage: 8,
   };
 
   render() {

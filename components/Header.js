@@ -1,21 +1,6 @@
-import React, { Component } from "react";
-import { Text, Button, View, StyleSheet, TouchableOpacity } from "react-native";
+import React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
 
-export default class ContentCard extends Component {
-  static defaultProps = {
-    result: '1h',
-    title: 'plan'
-  }
-
-  render() {
-    return (
-      <View>
-        <Text style={styles.result}> {this.props.result} </Text>
-        <Text style={styles.title}> {this.props.title} </Text>
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   result: {
@@ -23,11 +8,11 @@ const styles = StyleSheet.create({
     height: 19,
     // fontFamily: "Rubik",
     fontSize: 16,
-    fontWeight: "normal",
-    fontStyle: "normal",
+    fontWeight: 'normal',
+    fontStyle: 'normal',
     letterSpacing: -0.5,
-    textAlign: "center",
-    color: "#000000"
+    textAlign: 'center',
+    color: '#000000',
   },
   title: {
     // width: 25,
@@ -35,10 +20,17 @@ const styles = StyleSheet.create({
     opacity: 0.6,
     // fontFamily: "Rubik",
     fontSize: 12,
-    fontWeight: "normal",
-    fontStyle: "normal",
+    fontWeight: 'normal',
+    fontStyle: 'normal',
     letterSpacing: 0,
-    textAlign: "center",
-    color: "#000000"
-  }
+    textAlign: 'center',
+    color: '#000000',
+  },
 });
+
+export default ({ result, title }) => (
+  <View>
+    <Text style={styles.result}>{result}</Text>
+    <Text style={styles.title}>{title}</Text>
+  </View>
+);
