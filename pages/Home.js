@@ -1,32 +1,32 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import Header from '../components/Header';
-import ContentCard from '../components/ContentCard';
-import AddButton from '../components/AddButton';
-export default class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-      <View style={styles.Header}>
-        <Header />
-        <Header />
-        <Header />
-      </View>
-        <ContentCard />
-        <AddButton />
-      </View>
-    );
-  }
-}
+import { View, StyleSheet } from 'react-native';
+import PlanBarItem from '../components/PlanBarItem';
+import PomoListCard from '../components/PomoListCard';
+import FloatingButton from '../components/FloatingButton';
+import Input from '../components/Input';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  Header: {
-    flexDirection: "row",
-    justifyContent: "center"
-  }
+  PlanBarItem: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
 });
+export default class HomeScreen extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.PlanBarItem}>
+          <PlanBarItem title="plan" result="1h" />
+        </View>
+        <PomoListCard />
+        <FloatingButton />
+        <Input />
+      </View>
+    );
+  }
+}
