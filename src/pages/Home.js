@@ -1,13 +1,23 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
+import Page from '../containers/Page';
 
 export default class HomeScreen extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Page>
+        {/* <HeaderText />
+        <PlanBar>
+          <PlanBarItem />
+          <PlanBarItem />
+          <PlanBarItem />
+        <PlanBar/>
+        <PomoListView>
+          state.map => <PomoListCard />
+        </PomoListView>
+        <FloatingCard /> */}
         <Text>Home</Text>
-      </View>
+      </Page>
     );
   }
 }
-
