@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text } from 'react-native';
-import Page from '../containers/Page';
+import Page from '../../containers/Page';
 
-export default class HomeScreen extends React.Component {
+export default class PomoList extends React.Component {
   render() {
     return (
       <Page>

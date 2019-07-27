@@ -1,7 +1,7 @@
 import {
   createSwitchNavigator, createBottomTabNavigator, createStackNavigator, createAppContainer,
 } from 'react-navigation';
-import Home from './pages/Home';
+import PomoList from './pages/PomoList';
 import Information from './pages/Information';
 import Report from './pages/Report';
 import SignInScreen from './pages/auth/SignInScreen';
@@ -12,11 +12,11 @@ const AuthStack = createStackNavigator({ SignIn: SignInScreen });
 const AppStack = createBottomTabNavigator(
   {
     Report,
-    Home,
+    PomoList,
     Information,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'PomoList',
   },
 );
 
