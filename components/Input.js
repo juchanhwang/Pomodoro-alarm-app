@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     height: 56,
     width: 312,
-    borderColor: 'gray',
+    paddingLeft: 20,
     borderWidth: 1,
     borderRadius: 16,
     backgroundColor: '#ffffff',
@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
   text: {
     width: 106,
     height: 24,
-    marginLeft: 20,
     color: '#222222',
     fontSize: 20,
     fontWeight: '500',

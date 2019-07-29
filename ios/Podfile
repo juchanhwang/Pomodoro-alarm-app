@@ -29,6 +29,8 @@ target 'alarmapp' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
   pod 'boost-for-react-native', :podspec => 'https://raw.githubusercontent.com/react-native-community/boost-for-react-native/master/boost-for-react-native.podspec'
   
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'alarmappTests' do
     inherit! :search_paths
     # Pods for testing
