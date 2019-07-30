@@ -5,7 +5,6 @@ import PomoListCard from '../components/PomoListCard';
 import FloatingButton from '../components/FloatingButton';
 import Input from '../components/Input';
 import CategoryButton from '../components/CategoryButton';
-import Icon from '../components/icon';
 
 const styles = StyleSheet.create({
   container: {
@@ -29,7 +28,6 @@ export default class HomeScreen extends React.Component {
         <FloatingButton />
         <Input />
         <CategoryButton text="category name" />
-        <Icon />
       </View>
     );
   }
