@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import Icon from 'react-native-ionicons';
 import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
@@ -30,12 +31,17 @@ const styles = StyleSheet.create({
     letterSpacing: -0.3,
     color: '#444444',
   },
+  icon: {
+    position: 'absolute',
+    right: 20,
+  },
 });
 
 const CategoryButton = ({ text }) => (
   <TouchableOpacity style={styles.button}>
     <View style={styles.categoryColor} />
     <Text style={styles.text}>{text}</Text>
+    <Icon style={styles.icon} ios="arrow-forward" size={16} />
   </TouchableOpacity>
 );
 
