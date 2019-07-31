@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-ionicons';
 import PropTypes from 'prop-types';
+import CategoryColor from './CategoryColor';
 
 const styles = StyleSheet.create({
   button: {
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
     height: 14,
     marginRight: 12,
     borderRadius: 3,
-    backgroundColor: '#222222',
+    backgroundColor: '#0bce71',
   },
   text: {
     width: 110,
