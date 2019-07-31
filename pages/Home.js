@@ -5,6 +5,8 @@ import PomoListCard from '../components/PomoListCard';
 import FloatingButton from '../components/FloatingButton';
 import Input from '../components/Input';
 import CategoryButton from '../components/CategoryButton';
+import RoutineInput from '../components/RoutineInput';
+import TimerInput from '../components/TimerInput';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,6 +30,8 @@ export default class HomeScreen extends React.Component {
         <FloatingButton />
         <Input />
         <CategoryButton text="category name" />
+        {/* <RoutineInput /> */}
+        <TimerInput />
       </View>
     );
   }

@@ -8,24 +8,27 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     borderWidth: 1,
     borderRadius: 16,
-    backgroundColor: '#ffffff',
     justifyContent: 'center',
+    backgroundColor: '#ffffff',
+    borderStyle: 'solid',
+    borderColor: '#eceef0',
   },
   text: {
-    width: 106,
-    height: 24,
-    color: '#222222',
-    fontSize: 20,
+    height: 19,
     fontWeight: '500',
     fontStyle: 'normal',
-    letterSpacing: -0.38,
+    // opacity: 0.2,
+    // fontFamily: 'Rubik',
+    fontSize: 16,
+    letterSpacing: -0.3,
+    color: '#0f2c41',
   },
 });
 
 export default class UselessTextInput extends Component {
   constructor(props) {
     super(props);
-    this.state = { text: 'PomoPomo' };
+    this.state = { text: 'Enter Pomo Name' };
   }
 
   render() {
