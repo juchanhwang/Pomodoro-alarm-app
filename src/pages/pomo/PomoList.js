@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import Page from '../../containers/Page';
-import PlanBarItem from '../../components/planbar/PlanBarItem';
+import PlanBarItem from '../../components/header/PlanBarItem';
 import PomoListCard from '../../components/timer/PomoListCard'
 
 export default class PomoList extends React.Component {
